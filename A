@@ -1,0 +1,15 @@
+using System.Collections.Specialized;
+using System.Text;
+
+namespace ahmedc_1.frist_work
+{
+    internal class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            Console.WriteLine("Hello, " + input);
+        }
+    }
+}
