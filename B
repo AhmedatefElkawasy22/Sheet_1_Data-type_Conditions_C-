@@ -1,0 +1,21 @@
+using System.Collections.Specialized;
+using System.Text;
+
+namespace ahmedc_1.frist_work
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            string[] ans = input.Split(" ");
+            for (int i = 0; i <ans.Length-1; i++)
+            {
+                Console.WriteLine(ans[i]);
+            }
+            string doublenum = ans[ans.Length - 1];
+            double res=double.Parse(doublenum);
+            Console.WriteLine("{0:0.0}", res);
+        }
+    }
+}
