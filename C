@@ -1,0 +1,20 @@
+using System.Collections.Specialized;
+using System.Text;
+
+namespace ahmedc_1.frist_work
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string input=Console.ReadLine();
+            string[] convert = input.Split(" ");
+            long num1 = long.Parse(convert[0]);
+            long num2 = long.Parse(convert[1]);
+            Console.WriteLine($"{num1} + {num2} = {num1+num2}");
+            Console.WriteLine($"{num1} * {num2} = {num1*num2}");
+            Console.WriteLine($"{num1} - {num2} = {num1-num2}");
+
+        }
+    }
+}
