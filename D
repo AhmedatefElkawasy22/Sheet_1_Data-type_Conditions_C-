@@ -1,0 +1,21 @@
+using System.Collections.Specialized;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+
+namespace ahmedc_1.frist_work
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            string[] res = input.Split(" ");
+            long a =long.Parse(res[0]);
+            long b =long.Parse(res[1]);
+            long c =long.Parse(res[2]);
+            long d =long.Parse(res[3]);
+            Console.WriteLine($"Difference = {(a * b) - (c * d)}");
+        }
+
+    }
+}
