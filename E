@@ -1,0 +1,18 @@
+using System.Collections.Specialized;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+
+namespace ahmedc_1.frist_work
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            double num = double.Parse(input);
+            double res = num * num * 3.141592653;
+            Console.WriteLine($"{res:0.000000000}");
+        }
+
+    }
+}
