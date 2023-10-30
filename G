@@ -1,0 +1,17 @@
+using System.Collections.Specialized;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+
+namespace ahmedc_1.frist_work
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+            long num = long.Parse(Console.ReadLine());
+            Console.WriteLine(num * (num + 1) / 2);
+        }
+        
+    }
+}
