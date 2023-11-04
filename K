@@ -1,0 +1,24 @@
+using System.Collections.Specialized;
+using System.Drawing;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+namespace ahmedc_1.frist_work
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            string input = Console.ReadLine();
+            string[] nums = input.Split(' ');
+            int A = int.Parse(nums[0]);
+            int B = int.Parse(nums[1]);
+            int C = int.Parse(nums[2]);
+            int[] res = {A, B, C};
+            Array.Sort(res);
+            Console.WriteLine($"{res[0]} {res[2]}");
+        }
+
+    }
+}
