@@ -1,0 +1,28 @@
+using System.Collections.Specialized;
+using System.Drawing;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+namespace ahmedc_1.frist_work
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            string input = Console.ReadLine();
+            string input2 = Console.ReadLine();
+            string[] nums = input.Split(' ');
+            string[] nums2 = input2.Split(' ');
+            if (nums[1] == nums2[1])
+            {
+                Console.WriteLine("ARE Brothers");
+            }
+            else
+            {
+                Console.WriteLine("NOT");
+            }
+        }
+
+    }
+}
