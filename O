@@ -1,0 +1,46 @@
+using System.Collections.Specialized;
+using System.Drawing;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+namespace ahmedc_1.frist_work
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            string input = Console.ReadLine();
+            char opration = '!';
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input[i] == '+' || input[i] == '-' || input[i] == '/' || input[i] == '*')
+                {
+                    opration = input[i];
+                    break;
+                }
+            }
+            // Console.WriteLine(opration);
+            char[] op = { '+', '-', '*', '/' };
+            string[] input2 = input.Split(op, StringSplitOptions.None);
+            int a = int.Parse(input2[0]);
+            int b = int.Parse(input2[1]);
+            if (opration == '+')
+            {
+                Console.WriteLine(a + b);
+            }
+            else if (opration == '-')
+            {
+                Console.WriteLine(a - b);
+            }
+            else if (opration == '*')
+            {
+                Console.WriteLine(a * b);
+            }
+            else
+            {
+                Console.WriteLine(a / b);
+            }
+        }
+    }
+}
