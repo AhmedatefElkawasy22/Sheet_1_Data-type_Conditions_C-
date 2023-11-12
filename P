@@ -1,0 +1,26 @@
+using System.Collections.Specialized;
+using System.Drawing;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+namespace ahmedc_1.frist_work
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            string input = Console.ReadLine();
+            char n = input[0];
+            int num = n - '0';
+            if (num%2==0)
+            {
+                Console.WriteLine("EVEN");
+            }
+            else
+            {
+                Console.WriteLine("ODD");
+            }
+        }
+    }
+}
