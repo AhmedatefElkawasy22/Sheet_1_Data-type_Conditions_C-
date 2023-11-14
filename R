@@ -1,0 +1,27 @@
+using System.Diagnostics.CodeAnalysis;
+
+namespace learning
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num=int.Parse(Console.ReadLine());
+            int sum = 0;
+            while (num>=365)
+            {
+                num -= 365;
+                sum++;
+            }
+            Console.WriteLine($"{sum} years");
+            sum = 0;
+            while (num>=30)
+            {
+                num-=30;
+                sum++;
+            }
+            Console.WriteLine($"{sum} months\n{num} days");
+           
+        }
+    }
+}
