@@ -1,0 +1,22 @@
+using System.Diagnostics.CodeAnalysis;
+
+namespace learning
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] arr=Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int a = arr[0];
+            int b = arr[1];
+            int c = arr[2];
+            Array.Sort(arr);
+            foreach (var i in arr)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine($"\n{a}\n{b}\n{c}");
+        }
+    }
+}
