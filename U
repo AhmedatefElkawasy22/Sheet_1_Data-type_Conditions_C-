@@ -1,0 +1,25 @@
+using System.Collections.Specialized;
+using System.Diagnostics.CodeAnalysis;
+using System.Security.Cryptography.X509Certificates;
+
+namespace learning
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            float n = float.Parse(input);
+            int intn = (int)n;
+            float res = n - intn;
+            if (res==0)
+            {
+                Console.WriteLine($"int {n}");
+            }
+            else
+            {
+                Console.Write($"float {intn} {res}");
+            }
+        }
+    }
+}
