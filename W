@@ -1,0 +1,53 @@
+using System.Collections.Specialized;
+using System.Diagnostics.CodeAnalysis;
+using System.Security.Cryptography.X509Certificates;
+
+namespace learning
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            string[] arr= input.Split(" ");
+            int A = int.Parse(arr[0]);
+            char op = char.Parse(arr[1]);
+            int B = int.Parse(arr[2]);
+            char eq = char.Parse(arr[3]);
+            int C = int.Parse(arr[4]);
+            if (op == '+')
+            {
+                if (A + B == C)
+                {
+                    Console.WriteLine("Yes");
+                }
+                else
+                {
+                    Console.WriteLine(A + B);
+                }
+            }
+            if (op == '-')
+            {
+                if (A - B == C)
+                {
+                    Console.WriteLine("Yes");
+                }
+                else
+                {
+                    Console.WriteLine(A - B);
+                }
+            }
+            if (op == '*')
+            {
+                if (A * B == C)
+                {
+                    Console.WriteLine("Yes");
+                }
+                else
+                {
+                    Console.WriteLine(A * B);
+                }
+            }
+        }
+    }
+}
