@@ -1,0 +1,31 @@
+using System.Collections.Specialized;
+using System.Diagnostics.CodeAnalysis;
+using System.Security.Cryptography.X509Certificates;
+
+namespace learning
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            string[] arr= input.Split(" ");
+            int l1 = int.Parse(arr[0]);
+            int r1 = int.Parse(arr[1]);
+            int l2 = int.Parse(arr[2]);
+            int r2 = int.Parse(arr[3]);
+            int r3 = Math.Min(r1, r2);
+            int l3 = Math.Max(l1, l2);
+            if (l3 > r3)
+            {
+ 
+                Console.WriteLine(-1);
+            }
+            else
+            {
+             
+                Console.WriteLine($"{l3} {r3}");
+            }
+        }
+    }
+}
