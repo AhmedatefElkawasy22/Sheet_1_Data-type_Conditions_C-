@@ -1,0 +1,28 @@
+using System.Collections.Specialized;
+using System.Diagnostics.CodeAnalysis;
+using System.Security.Cryptography.X509Certificates;
+
+namespace learning
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            string[] arr= input.Split(" ");
+            long a = int.Parse(arr[0]) % 100;
+            long b = int.Parse(arr[1]) % 100;
+            long c = int.Parse(arr[2]) % 100;
+            long d = int.Parse(arr[3]) % 100;
+            long res=(a*b*c*d)%100;
+            if (res<10)
+            {
+                Console.Write(0);
+            }
+            Console.WriteLine(res);
+
+            
+           
+        }
+    }
+}
